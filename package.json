@@ -1,0 +1,16 @@
+{
+  "name": "slack-message-counter",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@slack/client": "^3.8.1",
+    "bluebird": "^3.4.7",
+    "promise-retry": "^1.1.1",
+    "sprintf-js": "^1.0.3"
+  },
+  "author": "Pine Mizune",
+  "license": "Unlicense"
+}
