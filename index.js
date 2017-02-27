@@ -14,9 +14,6 @@ if (!token) {
 }
 
 const web = new WebClient(token)
-Promise.promisifyAll(web.channels.__proto__)
-Promise.promisifyAll(web.groups.__proto__)
-Promise.promisifyAll(web.search.__proto__)
 
 // ----------------------------------------------------------------------------
 
