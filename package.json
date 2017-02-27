@@ -8,6 +8,7 @@
   "dependencies": {
     "@slack/client": "^3.8.1",
     "bluebird": "^3.4.7",
+    "lodash.sumby": "^4.6.0",
     "promise-retry": "^1.1.1",
     "sprintf-js": "^1.0.3"
   },

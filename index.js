@@ -1,6 +1,7 @@
 'use strict'
 
 const Promise = require('bluebird')
+const sumBy = require('lodash.sumby')
 const promiseRetry = require('promise-retry')
 const { WebClient } = require('@slack/client')
 const { sprintf } = require('sprintf-js')
@@ -31,12 +32,11 @@ const web = new WebClient(token)
     results.push({ name, total })
   })))
 
-  results.sort((a, b) =>
-    a.total > b.total ? -1 :
-    a.total < b.total ?  1 : 0
-  )
-
+  results.sort((a, b) => b.total - a.total)
   for (const result of results) {
     console.log(sprintf('%5d %s', result.total, result.name))
   }
+
+  const sum = sumBy(results, result => result.total)
+  console.log(`\nTotal: ${sum}`)
 }()
