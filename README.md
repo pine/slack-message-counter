@@ -1,7 +1,7 @@
 slack-message-counter
 ---------------------
 
-Count yor Slack messages.
+Count your Slack messages.
 
 ## Requirements
 
