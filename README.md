@@ -1,6 +1,8 @@
 slack-message-counter
 ---------------------
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pine/slack-message-counter.svg)](https://greenkeeper.io/)
+
 Count your Slack messages.
 
 ## Requirements
